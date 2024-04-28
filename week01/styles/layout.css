@@ -1,0 +1,56 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template:  auto 1fr auto / auto 1fr 35rem;
+}
+.header-content {
+    grid-column: 1/4;
+    background: rgb(71, 180, 216);
+    padding: 2rem;
+}
+.main-content {
+    grid-column: 1/3;
+    background:  rgb(176, 181, 245);
+    padding: 1rem;
+    font-size: 1.5rem;
+
+}
+.aside-content {
+    grid-column: 3/4;
+    background: pink;
+    padding: 1rem;
+    font-size: 1.5rem;
+
+}
+.navi {
+    display: flex;
+    align-items: center;
+    background: rgb(211, 211, 197);
+    list-style: none;
+    margin-right: -32px;
+    margin-left: -32px;
+    margin-top: 50px;
+    margin-bottom: -40px;
+    height: 4rem;
+}
+.navi li{
+    flex: 1 1 auto;
+    list-style: none;
+    
+}
+.navi a { 
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+
+.footer-content {
+    grid-column: 1/4;
+    background: rgb(144, 238, 238);
+    padding: 2rem;
+    height: 8rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
