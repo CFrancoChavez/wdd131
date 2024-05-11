@@ -1,0 +1,23 @@
+
+    
+
+
+header{
+    display: grid;
+    color: white;
+    background-color: black;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.container1{
+    grid-column: 1/2;
+    color: black;
+    
+}
+.container2{
+    grid-column: 2/3;
+    color: black;
+}
