@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <meta name="description" content="Temples responsive page">
+    <meta name="author" content="César Franco Chávez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+    <header>
+        <!-- <a id="menu" href="#"></a> -->
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <button id="menu" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+       
+        <nav>
+            <ul class="navigation">
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <section class="grid-container">
+            <!-- Aquí van las figuras de las fotos de los templos -->
+            <figure>
+                <img src="images/cordoba-argentina-temple.jpeg" alt="Temple 1" width="300" height="200">
+                <figcaption>Cordoba Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/curitiba-brazil-temple.jpeg" alt="Temple 2" width="300" height="200">
+                <figcaption>Curitiba Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bountiful-temple.png" alt="Bountiful Temple" width="300" height="200">
+                <figcaption>Bountiful Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cochabamba-bolivia-temple.jpeg" alt="Cochabamba Temple" width="300" height="200">
+                <figcaption>Cochabamba Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/guayaquil-ecuador-temple.jpeg" alt="Guayaquil Temple" width="300" height="200">
+                <figcaption>Guayaquil Temple</figcaption>
+            </figure>  
+            <figure>
+                <img src="images/kona-temple.jpeg" alt="Kona Temple" width="300" height="200">
+                <figcaption>Kona Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/edmonton-alberta-temple.jpeg" alt="Edmonton Temple" width="300" height="200">
+                <figcaption>Edmonton Temple</figcaption>
+            </figure>  
+            <figure>
+                <img src="images/fort-lauderdale-florida-temple.jpeg" alt="Fort Lauderdale Temple" width="300" height="200">
+                <figcaption>Fort Lauderdale Temple</figcaption>
+            </figure>  
+            <figure>
+                <img src="images/fresno-temple.jpeg" alt="Fresno Temple" width="300" height="200">
+                <figcaption>Fresno Temple</figcaption>
+            </figure>    
+            <!-- Repite este bloque para cada foto de templo -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 César Franco Chávez - La Calera</p>
+        <p>Last modification: <span id="lastModified"></span></p> 
+    </footer>
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
