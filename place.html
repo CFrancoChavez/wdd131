@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="Franco Chávez">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - César Franco Chávez - Place single page">
+    <title>WDD 131 - Dynamic Web Fundamentals - Franco Chávez</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Córdoba</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/cordoba-hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/cordoba-hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/cordoba-hero-large.webp" alt="Cordoba Landscape">
+            </picture>
+        </section>
+        <div class="cards-container">
+        
+            <section class="data card">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 165,321 sq km</p>
+                <p><strong>Population:</strong> 3,308,876</p>
+                <p><strong>Capital:</strong> Cordoba</p>
+                <p><strong>Languages:</strong> Spanish</p>
+                <p><strong>Currency:</strong> Argentine Peso</p>
+                <p><strong>Time Zone:</strong> UTC-3</p>
+                <p><strong>Calling Code:</strong> +54</p>
+                <p><strong>Internet TLD:</strong> .ar</p>
+            </section>
+        
+            <section class="weather card">
+                <h2>Weather</h2>
+                <div class="weather-icon">
+                    <img src="images/weather-icon.svg" alt="Weather Icon">
+                </div>
+                <p><strong>Temperature:</strong> 10 °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 5 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer-content"> &copy;2024 César Franco Chávez - La Calera
+        <p>Last modification: <span id="lastModified"></span></p> 
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
