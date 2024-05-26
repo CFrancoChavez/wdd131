@@ -1,0 +1,140 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+#menu{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    
+}
+#menu::before {
+    content: "≡";
+}
+nav {
+	background-color: #2F485D;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 768px;
+}
+
+.navigation li {
+	display: none;
+    margin-right: 20px;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover   {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+header {
+    background-color:#2F485D;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+header h2{
+    text-align: left;
+}
+/* nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+} */
+
+/* nav ul li {
+    display: inline;
+    margin-right: 20px;
+} */
+
+/* nav ul li a {
+    color: #fff;
+    text-decoration: none;
+} */
+
+main {
+    padding: 20px;
+}
+main h2{
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px #000  solid  ;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.image-container {
+    width: 100%;
+    height: 150px; /* Tamaño fijo para las imágenes */
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.name, .location, .dedication, .area {
+    text-align: center;
+    padding-top: .75rem;
+    margin: 0;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+footer {
+    background-color: #2F485D;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
