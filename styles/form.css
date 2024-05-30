@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #003087;
+    --secondary-color: #ffcc00;
+    --text-color: #333333; /* Darker text color for better contrast */
+    --background-color: #f4f4f4;
+    --footer-background: #003087;
+    --footer-text-color: #ffffff;
+    --card-border-radius: 10px;
+    --card-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --form-background: #ffffff;
+    --form-text-color: #000000; /* Ensure high contrast for form text */
+    --label-color: #222222; /* Darker label color */
+    --placeholder-color: #555555; /* Darker placeholder color */
+    --star-default-color: #666666; /* Darker color for default stars */
+    --star-hover-color: gold; /* Color for stars on hover and selection */
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 10;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--form-background);
+    color: var(--form-text-color);
+    box-shadow: var(--card-box-shadow);
+    border-radius: var(--card-border-radius);
+}
+
+h1 {
+    text-align: center;
+    color: var(--footer-text-color); /* Ensure high contrast for headings */
+}
+h2 {
+    text-align: center;
+}
+form, .container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: var(--label-color); /* Use darker color for labels */
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--form-text-color); /* Ensure high contrast for input text */
+}
+
+select option:first-child {
+    color: var(--placeholder-color); /* Darker placeholder color */
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: inline-block;
+    font-size: 24px;
+    color: var(--star-default-color); /* Darker color for default stars */
+    cursor: pointer;
+}
+
+.rating input:checked ~ label,
+.rating input:hover ~ label,
+.rating label:hover ~ label {
+    color: var(--star-hover-color); /* Color for stars on hover and selection */
+}
+
+.submit-button {
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
