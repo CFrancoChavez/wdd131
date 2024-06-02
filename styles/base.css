@@ -11,7 +11,7 @@ body {
     background:  rgb(99, 219, 219);
     padding: 2rem;
     text-align: center;
-    color: #7a7460
+    color: #423E3B
 }
 .container{
     display: grid;
@@ -35,7 +35,7 @@ body {
     padding: 1rem;
     text-align: center;
     grid-column: 1/3;
-    background-color: rgb(103, 169, 228);
+    background-color: #FF2E00 ;
     margin-top: -0.998rem;
     width: 100%;
     border-top-left-radius: 0.5rem;
