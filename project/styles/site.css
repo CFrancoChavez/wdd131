@@ -9,7 +9,7 @@
     --paragraph-font: 'Roboto';
     --headline-color-on-white: #423E3B;
     --headline-color-on-color: #FFFFFF;
-    --paragraph-color-on-white: #5448C8;
+    --paragraph-color-on-white:  #423E3B;
     --paragraph-color-on-color: #FFFFFF;
     --paragraph-background-color: #5448C8;
     --nav-link-color:#FFFF ;
@@ -118,4 +118,26 @@ footer {
     background-color: aqua;
     text-align: center;
     padding: 10px;
+}
+/* added code */
+@media only screen and (max-width: 767px){
+main {
+    width: 100vw;
+    align-self: center;
+}
+ main img {
+    width: 100vw;
+   
+    border-radius: 15px;
+
+}
+#main-text{
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#text-title, #paragraph {
+    display: none;
+}
+
 }

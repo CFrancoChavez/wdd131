@@ -36,13 +36,13 @@
     font-size: 3.5rem;
 }
 #text-1,#text-2 {
-    padding: 0.3rem;
+    padding: 0.2rem;
 }
 #text-title {
     font-size: 2em;
     margin-left: 8px;
     margin-top: -0.1rem;
-    padding: 5px;
+    padding: 10px;
 }
 
 #paragraph {
@@ -64,17 +64,19 @@
 }
 main {
     grid-column: 2/3;
+    
   
 }
 main img{
-    margin: 1rem;
+    
     border-radius: 15px;
 
 }
-main h2{
-    margin-left: 1rem;
+#main-text{
+    margin: 1rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    color: var( --paragraph-color-on-white);
 }
 footer{
     grid-column: 1/4;
@@ -90,10 +92,12 @@ footer{
 .right-side p{
     font-size: 2rem;
     margin: 2rem;
+  
 }
 /*texto dinamico*/
 .right-side{
-    
+    margin: 1rem;
+    border-radius: 15px;
     border: 2px solid #ccc;
     display: flex;
     align-items: center;
@@ -101,10 +105,26 @@ footer{
     flex-direction: column; /* Asegura que los párrafos se apilen verticalmente */
     transition: background-color 0.3s ease;
 }
-
+.right-side h2 {
+    color: var(--paragraph-color-on-white);
+}
 .right-side p {
     display: none;
     margin: 0;
     padding: 10px;
     text-align: center;
+}
+#showTextButton {
+    display: block; /* Asegúrate de que el botón sea un bloque */
+    margin: 20px auto; /* Centra el botón horizontalmente */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+}
+
+#showTextButton:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón por el botón */
 }
