@@ -28,7 +28,7 @@
 .navigation a {
     text-align: center;
     align-content: space-between;
-    margin: 10px;
+    margin: 5px;
     padding: 15px;
 }
 #menu {
@@ -37,6 +37,7 @@
 #text-1 {
     font-size: 3.5rem;
 }
+
 #text-1,#text-2 {
     padding: 0.2rem;
 }
