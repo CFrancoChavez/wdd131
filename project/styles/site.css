@@ -147,8 +147,9 @@ main {
     background-color: #FF2E00; /* Color de fondo del botón */
     /* Color del texto del botón */
     border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 10px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    font-weight: 600;
 }
 
 #showTextButton:hover {
