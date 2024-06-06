@@ -28,7 +28,7 @@
 .navigation a {
     text-align: center;
     align-content: space-between;
- 
+    margin: 5px;
     padding: 15px;
 }
 #menu {
@@ -42,17 +42,19 @@
     padding: 0.2rem;
 }
 #text-title {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-left: 8px;
-    margin-top: -0.1rem;
-    padding: 10px;
+    margin-top: 2rem;
+    padding: 5px;
+    font-weight: 700;
 }
 
 #paragraph {
     font-size: 1.3em;
-    margin-left: 8px;
+    margin: 18px;
     margin-top: -1rem;
     padding: 5px;
+    text-align: justify;
 }
 
 .left-side {
@@ -67,18 +69,20 @@
 }
 main {
     grid-column: 2/3;
-    
-  
+      
 }
-main img{
-    
+main img  {
+    border-radius: 15px; 
+}
+main iframe{
+    width: 98%;
     border-radius: 15px;
 
 }
 #main-text{
-    margin: 1rem;
+    margin: 0.5rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var( --paragraph-color-on-white);
 }
 footer{
@@ -117,17 +121,36 @@ footer{
     padding: 10px;
     text-align: center;
 }
+#services {
+    display: none;
+}
 #showTextButton {
     display: block; /* Asegúrate de que el botón sea un bloque */
     margin: 20px auto; /* Centra el botón horizontalmente */
     padding: 10px 20px; /* Espaciado interno del botón */
-    background-color: #FF2E00; /* Color de fondo del botón */
-     /* Color del texto del botón */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor al pasar por el botón */
 }
 
 #showTextButton:hover {
-    background-color:aqua; /* Color de fondo al pasar el ratón por el botón */
+    background-color: #0056b3; /* Color de fondo al pasar el ratón por el botón */
 }
+#contactButton {
+    display: block; /* Asegúrate de que el botón sea un bloque */
+    margin: 20px auto; /* Centra el botón horizontalmente */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color:  #FF2E00; /* Color de fondo del botón */
+    color: #423E3B; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    font-weight: 600;
+}
+
+#contactButton:hover {
+    background-color:  aqua; /* Color de fondo al pasar el ratón por el botón */
+}
+

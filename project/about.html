@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="Franco Chávez">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - César Franco Chávez - Project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/about-large.css" media="screen and (min-width: 768px)">
+    <title>Home</title>
+</head>
+<body>
+    <div class="parent">
+        <header class="h-container">
+            <div>
+            <h1 id="text-1">DevCraft </h1>
+            <h2 id="text-2">Code Solutions</h2>
+            </div>
+            <button id="menu" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav>
+                <ul class="navigation">
+
+                    <li><a href="home.html" id="nav-home">Home</a></li>
+                    <li><a href="about.html" id="nav-about">About</a></li>
+                    <li><a href="contact-us.html" id="nav-contactus">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="left-side">
+            <p id="text-title">
+                Services   </p>
+            <p id="services">Web Development & Responsive Design</p>
+            <div id="left-img">
+                <img src="images/about.png" alt="Home Picture">
+            </div>
+            <div>
+                
+                <p id="paragraph">
+                    Web development:
+                    "I offer custom web development, from <br>creating static websites to more complex web applications."<br>
+                    <br>
+                    Responsive Design:
+                    "Specializing in responsive design to <br>ensure your website looks and works perfectly on any <br>device,
+                    improving user experience and performance."    
+                   </p>
+            </div>
+        </div>
+        <main class="center">
+            <div id="main-text">
+            <h2>You can try our weather app right now!</h2>
+            </div>
+            <div id="hero">
+            <iframe src="https://cfrancochavez.github.io/cse121b/project.html" height="474" frameborder="0"></iframe>
+            </div>
+            <br>
+            <button id="contactButton">CONTACT US!</button>
+            <!-- <img id="hero" src="images/main-picture2.webp" alt="Main Picture"> -->
+        </main>
+       
+        
+        <footer class="end">
+            <p>&copy; 2024 César Franco Chávez - La Calera</p>
+            <p>Last modification: <span id="lastModified"></span></p>
+        </footer>
+        <script src="scripts/site.js" defer></script>
+        <script src="scripts/site2.js"></script>
+    </div>
+</body>
+
+</html>
