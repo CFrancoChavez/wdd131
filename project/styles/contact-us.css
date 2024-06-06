@@ -44,7 +44,7 @@ input, select, textarea, button {
 button {
     grid-column: 1 / -1;
     background-color:#5448C8;
-    color: white;
+   
     border: none;
     cursor: pointer;
 }
